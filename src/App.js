@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import getCurrentScreen from "./services/getCurrentScreen";
 
 function App() {
+  
+  const [players, setPlayers] = useState([])
+  const [round, setRound] = useState(-1)
+  const [stage, setStage] = useState(1)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100vw',
+      height: '100vh'
+  }}>
+    {getCurrentScreen(stage, setStage, round, setRound, players, setPlayers)}
     </div>
-  );
+    )
+
 }
 
-export default App;
+export default App
