@@ -1,7 +1,7 @@
 {
   "name": "judgement",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://sheshenk.github.io/judgement-game/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -17,6 +17,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
