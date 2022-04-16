@@ -1,5 +1,6 @@
 import { Button, Paper, TextField, Typography } from '@mui/material'
-import './PlayerInitPane.css'
+import roundList from '../../utils/data/roundList'
+import '../paneContainer.css'
 
 const PlayerInitPane = ({players, setPlayers}) => {
 
@@ -7,8 +8,9 @@ const PlayerInitPane = ({players, setPlayers}) => {
         const newPlayers = [...players]
         newPlayers.push({
             name: '',
-            scores: [],
-            declaration: -1
+            scores: Array(roundList.length).fill(0),
+            declaration: -1,
+            obtained: -1
         })
         setPlayers(newPlayers)
     }
@@ -26,9 +28,9 @@ const PlayerInitPane = ({players, setPlayers}) => {
     )
 
     return (
-        <Paper elevation={4} className='playerInitContainer'>
-        <div style={{width: `100%`, display:'flex', justifyContent:'space-between'}}>
-        <Typography variant='h5'>
+        <Paper elevation={4} className='paneContainer'>
+        <div style={{width: `100%`, display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom: 8}}>
+        <Typography variant='h5' style={{fontWeight:'bold'}}>
         Add Players
         </Typography>
         <Button variant='outlined' onClick={addPlayer}>Add</Button>

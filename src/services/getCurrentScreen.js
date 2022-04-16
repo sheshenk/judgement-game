@@ -1,4 +1,6 @@
+import roundList from "../utils/data/roundList";
 import Declaration from "../views/Declaration/Declaration";
+import FinalResults from "../views/FinalResults/FinalResults";
 import Initialization from "../views/Initialization/Initialization";
 import PlayRound from "../views/PlayRound/PlayRound";
 import Redeclaration from "../views/Redeclaration/Redeclaration";
@@ -7,6 +9,8 @@ import Results from "../views/Results/Results";
 const getCurrentScreen = (stage, setStage, round, setRound, players, setPlayers) => {
     if (round === -1) {
         return <Initialization stage={stage} setStage={setStage} round={round} setRound={setRound} players={players} setPlayers={setPlayers}/>;
+    } else if (round >= roundList.length) {
+        return <FinalResults stage={stage} setStage={setStage} round={round} setRound={setRound} players={players} setPlayers={setPlayers}/>
     }
     switch (stage) {
         case 1:
