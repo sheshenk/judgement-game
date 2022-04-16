@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/judgement-game/static/css/main.4e1b5677.css",
+    "main.js": "/judgement-game/static/js/main.3ba7f576.js",
+    "index.html": "/judgement-game/index.html",
+    "main.4e1b5677.css.map": "/judgement-game/static/css/main.4e1b5677.css.map",
+    "main.3ba7f576.js.map": "/judgement-game/static/js/main.3ba7f576.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e1b5677.css",
+    "static/js/main.3ba7f576.js"
+  ]
+}
