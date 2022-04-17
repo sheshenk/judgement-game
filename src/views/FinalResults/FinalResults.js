@@ -1,4 +1,4 @@
-import { Heading, HStack, Text } from "@chakra-ui/react"
+import { Heading, HStack } from "@chakra-ui/react"
 import ContainerBox from "../../components/ContainerBox/ContainerBox"
 import FinalResultsList from "./FinalResultsList"
 import { finalResultsBack } from "./finalResultsNav"

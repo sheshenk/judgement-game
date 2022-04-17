@@ -1,6 +1,5 @@
-import { Heading, HStack, Text } from "@chakra-ui/react"
+import { Heading, HStack } from "@chakra-ui/react"
 import ContainerBox from "../../components/ContainerBox/ContainerBox"
-import roundList from "../../data/roundList"
 import ResultsList from "./ResultsList"
 import { resultsBack, resultsNext } from "./resultsNav"
 
