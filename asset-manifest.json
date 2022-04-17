@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/judgement-game/static/js/main.fdf88de6.js",
+    "main.js": "/judgement-game/static/js/main.bd0d45d0.js",
     "index.html": "/judgement-game/index.html",
-    "main.fdf88de6.js.map": "/judgement-game/static/js/main.fdf88de6.js.map"
+    "main.bd0d45d0.js.map": "/judgement-game/static/js/main.bd0d45d0.js.map"
   },
   "entrypoints": [
-    "static/js/main.fdf88de6.js"
+    "static/js/main.bd0d45d0.js"
   ]
 }
